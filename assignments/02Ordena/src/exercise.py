@@ -1,10 +1,35 @@
 def main():
-    # Escribe el código adecuado para completar el programa
-    x = int(input("Ingresa el primer número: "))
-    y = int(input("Ingresa el segundo número: "))
-    z = int(input("Ingresa el tercer número: "))
+    a=int(input("Ingresa el primer número: "))
+    b=int(input("Ingresa el segundo número: "))
+    c=int(input("Ingresa el tercer número: "))
     
-    print("Hola")
-
-if __name__=='__main__':
-    main()
+    if a>b:
+        if b<c:
+            if a>c:
+                print(b)
+                print(c)
+                print(a)
+            else:
+                print(b)
+                print(a)
+                print(c)
+        else:
+            print(c)
+            print(b)
+            print(a)
+    else:
+        if a<c:
+            if c>b:
+                print(a)
+                print(b)
+                print(c)
+            else:
+                print(a)
+                print(c)
+                print(b)
+        else:
+            print(c)
+            print(a)
+            print(b)
+            
+main()
